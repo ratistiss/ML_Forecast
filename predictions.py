@@ -1,10 +1,9 @@
 import pandas as pd
 from flask import Flask, jsonify, request
 import pickle
-import os
 
 # load model
-model = pickle.load(open('/predictions.pkl','rb'))
+model = pickle.load(open('./predictions.pkl','rb'))
 
 # app
 app = Flask(__name__)
