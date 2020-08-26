@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 ''' testing '''
 # routes
-@app.route('https://git.heroku.com/ml-forecast-model.git', methods=['POST'])
+@app.route('https://ml-forecast-model.herokuapp.com/', methods=['POST'])
 def predict():
     # get data
     data = request.get_json(force=True)
