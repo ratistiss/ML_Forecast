@@ -8,7 +8,7 @@ model = pickle.load(open('./predictions.pkl','rb'))
 # app
 app = Flask(__name__)
 
-''' testing '''
+
 # routes
 @app.route('https://ml-forecast-model.herokuapp.com/', methods=['POST'])
 def predict():
